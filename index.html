@@ -24,8 +24,8 @@
 
     
     <!--<a-sky src="#sky" ></a-sky> -->
-    <a-entity environment="preset: egypt; dressingScale:10; dressingAmount:5; fog:0.98"></a-entity>
-    <!--<a-entity enviropack="preset: winter"></a-entity>-->
+    <!--<a-entity environment="preset: egypt; dressingScale:10; dressingAmount:6; fog:0.98"></a-entity>-->
+    <a-entity environment="preset: forest; dressingScale:10"></a-entity>
     
 
     <a-box position="0.2 1.8 -0.5" rotation="45 45 45" scale="0.25 0.25 0.25" color="#ff0000" shadow="cast:true"
@@ -33,7 +33,36 @@
 
     <!--<a-box position="0.25 1 -0.8" rotation="45 45 45" scale="0.25 0.25 0.25" color="#ff0000" shadow="cast:true"></a-box>-->
 
-    
+    <a-entity position="3 0 -3" shadow="cast:true">
+      <a-cylinder position="0 0.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+      <a-cylinder position="0 0.6 0" radius="0.3" height="1" color="#fff" material="
+              repeat: 1 0.2;
+              src:./res/marble/Marble012_2K-JPG_Color.jpg;              
+              roughness:1;
+      "></a-cylinder>
+      <a-cylinder position="0 1.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+    </a-entity>
+    <a-entity position="-3 0 -3" shadow="cast:true">
+      <a-cylinder position="0 0.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+      <a-cylinder position="0 0.6 0" radius="0.3" height="1" color="#fff" material="
+          repeat: 1 0.5aa;
+          src:./res/wood1/WoodSiding013_2K-JPG_Color.jpg;              
+          roughness:1;
+      "></a-cylinder>
+      <a-cylinder position="0 1.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+    </a-entity>
+    <a-entity position="3 0 3" shadow="cast:true">
+      <a-cylinder position="0 0.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+      <a-cylinder position="0 0.6 0" radius="0.3" height="1" color="#79C8E0" shadow="cast:true"></a-cylinder>
+      <a-cylinder position="0 1.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+    </a-entity>
+    <a-entity position="-3 0 3" shadow="cast:true">
+      <a-cylinder position="0 0.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+      <a-cylinder position="0 0.6 0" radius="0.3" height="1" color="#79C8E0" shadow="cast:true"></a-cylinder>
+      <a-cylinder position="0 1.1 0" radius="0.4" height="0.2" color="#C0DBE1"></a-cylinder>
+    </a-entity>
+
+
     <a-plane material="color:#FFeeee;
                       src:#floor;
                       repeat: 25 25;
@@ -47,7 +76,7 @@
 
     <!--<a-camera id="camera" look-controls user-height="1.6"></a-camera>-->
     <a-entity movement-controls="speed:0.15">  
-      <a-entity camera position="0 1.6 0" look-controls="pointerLockEnabled: true" >
+      <a-entity camera position="0 1.5 0" look-controls="pointerLockEnabled: true" >
     </a-entity>
 
     </a-entity>
